@@ -1,0 +1,87 @@
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_CONFIG (ID INTEGER NOT NULL, GROUP[*] VARCHAR(255), NAME VARCHAR(255), VALUE VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_config (id integer not null, group varchar(255), name varchar(255), value varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_TEMPLATE_STRUCT (ID INTEGER NOT NULL, BELONG_FIELD VARCHAR(255), NAME VARCHAR(255), ORDER[*] INTEGER, PLUGIN_NAME VARCHAR(255), PLUGIN_VERSION INTEGER, PARENT_ID INTEGER, TEMPLATE_ID VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_template_struct (id integer not null, belong_field varchar(255), name varchar(255), order integer, plugin_name varchar(255), plugin_version integer, parent_id integer, template_id varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
+alter table t_flow_config add constraint FK9fc8jhs449pucge6fpabfno7n foreign key (config_id) references t_config [42102-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_flow_struct_data add constraint FKt8jovpj1drwcim5xnmothidmp foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
+alter table t_template_config add constraint FKbd1oea3buh8gu6ptqp9yto1ge foreign key (config_id) references t_config [42102-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKg4jkpdgvldbf4fjkaesf4somp foreign key (parent_id) references t_template_struct [42102-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKesccanndo1jduaevfnwcd5t7b foreign key (template_id) references t_template [42102-200]
+2020-10-11 21:34:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct_data add constraint FKc5a1x8en8dav6y6wq55fbix1t foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_CONFIG (ID INTEGER NOT NULL, GROUP[*] VARCHAR(255), NAME VARCHAR(255), VALUE VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_config (id integer not null, group varchar(255), name varchar(255), value varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_TEMPLATE_STRUCT (ID INTEGER NOT NULL, BELONG_FIELD VARCHAR(255), NAME VARCHAR(255), ORDER[*] INTEGER, PLUGIN_NAME VARCHAR(255), PLUGIN_VERSION INTEGER, PARENT_ID INTEGER, TEMPLATE_ID VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_template_struct (id integer not null, belong_field varchar(255), name varchar(255), order integer, plugin_name varchar(255), plugin_version integer, parent_id integer, template_id varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
+alter table t_flow_config add constraint FK9fc8jhs449pucge6fpabfno7n foreign key (config_id) references t_config [42102-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_flow_struct_data add constraint FKt8jovpj1drwcim5xnmothidmp foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
+alter table t_template_config add constraint FKbd1oea3buh8gu6ptqp9yto1ge foreign key (config_id) references t_config [42102-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKg4jkpdgvldbf4fjkaesf4somp foreign key (parent_id) references t_template_struct [42102-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKesccanndo1jduaevfnwcd5t7b foreign key (template_id) references t_template [42102-200]
+2020-10-11 21:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct_data add constraint FKc5a1x8en8dav6y6wq55fbix1t foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_CONFIG (ID INTEGER NOT NULL, GROUP[*] VARCHAR(255), NAME VARCHAR(255), VALUE VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_config (id integer not null, group varchar(255), name varchar(255), value varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_TEMPLATE_STRUCT (ID INTEGER NOT NULL, BELONG_FIELD VARCHAR(255), NAME VARCHAR(255), ORDER[*] INTEGER, PLUGIN_NAME VARCHAR(255), PLUGIN_VERSION INTEGER, PARENT_ID INTEGER, TEMPLATE_ID VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_template_struct (id integer not null, belong_field varchar(255), name varchar(255), order integer, plugin_name varchar(255), plugin_version integer, parent_id integer, template_id varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
+alter table t_flow_config add constraint FK9fc8jhs449pucge6fpabfno7n foreign key (config_id) references t_config [42102-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_flow_struct_data add constraint FKt8jovpj1drwcim5xnmothidmp foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
+alter table t_template_config add constraint FKbd1oea3buh8gu6ptqp9yto1ge foreign key (config_id) references t_config [42102-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKg4jkpdgvldbf4fjkaesf4somp foreign key (parent_id) references t_template_struct [42102-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKesccanndo1jduaevfnwcd5t7b foreign key (template_id) references t_template [42102-200]
+2020-10-11 21:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct_data add constraint FKc5a1x8en8dav6y6wq55fbix1t foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE T_TEMPLATE_STRUCT (ID INTEGER NOT NULL, BELONG_FIELD VARCHAR(255), NAME VARCHAR(255), ORDER[*] INTEGER, PLUGIN_NAME VARCHAR(255), PLUGIN_VERSION INTEGER, PARENT_ID INTEGER, TEMPLATE_ID VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table t_template_struct (id integer not null, belong_field varchar(255), name varchar(255), order integer, plugin_name varchar(255), plugin_version integer, parent_id integer, template_id varchar(255), primary key (id)) [42001-200]
+2020-10-11 21:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_flow_struct_data add constraint FKt8jovpj1drwcim5xnmothidmp foreign key (template_struct_id) references t_template_struct [42102-200]
+2020-10-11 21:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKg4jkpdgvldbf4fjkaesf4somp foreign key (parent_id) references t_template_struct [42102-200]
+2020-10-11 21:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct add constraint FKesccanndo1jduaevfnwcd5t7b foreign key (template_id) references t_template [42102-200]
+2020-10-11 21:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_TEMPLATE_STRUCT" not found; SQL statement:
+alter table t_template_struct_data add constraint FKc5a1x8en8dav6y6wq55fbix1t foreign key (template_struct_id) references t_template_struct [42102-200]

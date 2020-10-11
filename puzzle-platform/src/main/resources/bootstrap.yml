@@ -1,0 +1,13 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 200MB
+      
+  autoconfigure:
+    exclude: 
+      - org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration
